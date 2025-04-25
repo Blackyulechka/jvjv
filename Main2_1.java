@@ -7,9 +7,9 @@ public class Main2_1 {
         scanner.nextLine();
         switch (t) {
             case 1:
-                System.out.println("Введите тип double");
+                System.out.println("Введите тип double ");
                 double num_1 = scanner.nextDouble();
-                System.out.println("Введите тип float");
+                System.out.println("Введите тип float ");
                 float num_2 = scanner.nextFloat();
                 sravn(num_1,num_2);
                 break;
