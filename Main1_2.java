@@ -2,13 +2,13 @@ import java.util.Date;
 import static java.lang.Math.PI;
 public class Main1_2 {
     public static void main(String[] args) {
-        double one_area = method(4, 24.0);
-        System.out.println(one_area);
+        double OneArea = Method(4, 24.0);
+        System.out.println(OneArea);
     }
-    public static double method(int Count, double D){
+    public static double Method(int Count, double D){
         double r = D/2;
-        double total_area=Math.PI*Math.pow(r,2);
-        double one_area=total_area/Count;
-        return one_area;
+        double TotalArea=Math.PI*Math.pow(r,2);
+        double OneArea=TotalArea/Count;
+        return OneArea;
     }
 }
