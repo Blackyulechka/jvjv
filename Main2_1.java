@@ -5,27 +5,23 @@ public class Main2_1 {
         System.out.println("Введите операцию: 1-сравнить, 2-округлить, 3-отбросить дроб.часть");
         int t = scanner.nextInt();
         scanner.nextLine();
+        System.out.println("Введите тип double ");
+        double Num1 = scanner.nextDouble();
         switch (t) {
             case 1:
-                System.out.println("Введите тип double ");
-                double num_1 = scanner.nextDouble();
                 System.out.println("Введите тип float ");
-                float num_2 = scanner.nextFloat();
-                sravn(num_1,num_2);
+                float Num2 = scanner.nextFloat();
+                Comparison(Num1,Num2);
                 break;
             case 2:
-                System.out.println("Введите тип double");
-                double num_3 = scanner.nextDouble();
-                okrug(num_3);
+                Round(Num1);
                 break;
             case 3:
-                System.out.println("Введите тип double");
-                double num_4 = scanner.nextDouble();
-                trash(num_4);
+                Whole(Num1);
                 break;
         }
     }
-    public static void sravn(double num_1, float num_2){
+    public static void Comparison(double num_1, float num_2){
         if (Math.abs(num_1-num_2)<0.000001){
             System.out.println("Числа равны");
         }
@@ -36,12 +32,12 @@ public class Main2_1 {
             System.out.println("Число типа float больше");
         }
     }
-    public static void okrug(double num_3){
-        double new_num=(long)(num_3+0.5);
-        System.out.println("Округленное число :" + (long)new_num);
+    public static void Round(double num_3){
+        double NewNum=(long)(num_3+0.5);
+        System.out.println("Округленное число :" + (long)NewNum);
     }
-    public static void trash(double num_4){
-        double new_num=(long)(num_4);
-        System.out.println("Целая часть числа :" + new_num);
+    public static void Whole(double num_4){
+        double NewNum=(long)(num_4);
+        System.out.println("Целая часть числа :" + NewNum);
     }
 }
