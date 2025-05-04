@@ -3,19 +3,19 @@ package l3_2;
 class Book{
     public String Name;
     public Author author;
-    int pages;
-    int year;
-    public Book(String Name, Author author, int pages, int year){
-        this.Name=Name; this.author=author; this.pages=pages; this.year=year;
+    public int Pages;
+    public int Year;
+    public Book(String Name, Author author, int Pages, int Year){
+        this.Name=Name; this.author=author; this.Pages=Pages; this.Year=Year;
     }
     public String toString(){
-        return "Название: "+ Name + ", Автор: "+ author+" Страниц: " +pages+ " Год выпуска: "+ year;
+        return "Название: "+ Name + ", Автор: "+ author+" Страниц: " + Pages+ " Год выпуска: " + Year;
     }
     public boolean same(Book Mybook){
-        return this.year == Mybook.year;
+        return this.Year == Mybook.Year;
     }
     public boolean same_year(Author year_a) {
-        return this.year == year_a.Ayear;
+        return this.Year == year_a.AuthorYear;
     }
 
 }

@@ -1,5 +1,7 @@
+package l5_1;
+
 class User implements Reader,Librarian,Supplier,Administrator {
-    String NameUser;
+    public String NameUser;
     public User(String NameUser) {
         this.NameUser = NameUser;
     }

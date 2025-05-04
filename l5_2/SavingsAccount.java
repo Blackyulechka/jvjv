@@ -1,3 +1,5 @@
+package l5_2;
+
 public class SavingsAccount extends AbstractAccount {
     public SavingsAccount(int balance){
         super(balance);
@@ -8,15 +10,15 @@ public class SavingsAccount extends AbstractAccount {
     }
     @Override
     public void addMoney(int amount){
-        balance+=amount;
-        System.out.println("Баланс после пополнения: " + balance);
+        Balance+=amount;
+        System.out.println("Баланс после пополнения: " + Balance);
     }
     @Override
     public void transfer(Account account, int amount){
-        if (amount<=balance) {
+        if (amount<=Balance) {
             account.addMoney(amount);
-            balance -=amount;
-            System.out.println("Баланс после перевода: " + balance);
+            Balance -=amount;
+            System.out.println("Баланс после перевода: " + Balance);
         }
         else{
             System.out.println("Недостаточно средств!");

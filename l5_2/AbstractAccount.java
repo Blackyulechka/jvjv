@@ -1,6 +1,8 @@
+package l5_2;
+
 abstract class AbstractAccount implements Account {
-    protected int balance;
+    protected int Balance;
     public AbstractAccount(int Balance) {
-        this.balance = Balance;
+        this.Balance = Balance;
     }
 }

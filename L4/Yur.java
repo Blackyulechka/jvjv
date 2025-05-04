@@ -3,8 +3,8 @@ package L4;
 class Yur extends Human {
     private double NDS;
 
-    public Yur(String name, String Passport, double NDS) {
-        super(name, Passport);
+    public Yur(String Name, String Passport, double NDS) {
+        super(Name, Passport);
         this.NDS = NDS;
     }
 

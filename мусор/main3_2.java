@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Author {
-    String name;
-    String Surname;
+    public String name;
+    public String Surname;
     int Ayear;
     public Author(String name, String Surname, int Ayear) {
         this.name = name;
@@ -13,8 +13,8 @@ class Author {
     }
 }
 class Book{
-    String Name;
-    Author author;
+    public String Name;
+    public Author author;
     int pages;
     int year;
     public Book(String Name, Author author, int pages, int year){
