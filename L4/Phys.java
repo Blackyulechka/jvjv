@@ -1,8 +1,8 @@
 package L4;
 
 class Phys extends Human {
-    public Phys(String name, String Passport) {
-        super(name, Passport);
+    public Phys(String Name, String Passport) {
+        super(Name, Passport);
     }
     @Override
     public double GetSum(double Sum, Human type_Human) {

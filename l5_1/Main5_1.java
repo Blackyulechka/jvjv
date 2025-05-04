@@ -1,3 +1,5 @@
+package l5_1;
+
 public class Main5_1 {
      public static void main(String[] args){
         User Maria = new User ("Мария");

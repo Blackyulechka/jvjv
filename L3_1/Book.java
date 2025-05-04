@@ -3,15 +3,15 @@ package L3_1;
 class Book{
     public String Name;
     public String Author;
-    public int pages;
-    public int year;
-    public Book(String Name, String Author, int pages, int year){
-        this.Name=Name; this.Author=Author; this.pages=pages; this.year=year;
+    public int Pages;
+    public int Year;
+    public Book(String Name, String Author, int Pages, int Year){
+        this.Name=Name; this.Author=Author; this.Pages=Pages; this.Year=Year;
     }
     public String toString(){
-        return "Название: "+ Name + ", Автор: "+ Author+" Страниц: " +pages+ " Год выпуска: "+ year;
+        return "Название: "+ Name + ", Автор: " + Author +" Страниц: " + Pages + " Год выпуска: " + Year;
     }
     public boolean same(Book Mybook){
-        return this.year == Mybook.year;
+        return this.Year == Mybook.Year;
     }
 }
