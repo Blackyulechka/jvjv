@@ -1,14 +1,14 @@
 package L7_5;
 
 public class Candidate {
-    private String FIO;
+    private String name;
     private String gender;
     private String age;
     private int relevance;
     private int rating;
 
-    public Candidate(String FIO, String gender, String age, int rel, int rate) {
-        this.FIO = FIO;
+    public Candidate(String name, String gender, String age, int rel, int rate) {
+        this.name = name;
         this.gender = gender;
         this.age = age;
         this.relevance = rel;
@@ -17,7 +17,7 @@ public class Candidate {
 
     @Override
     public String toString() {
-        return FIO + " (" + age + ") ," + relevance + ", " + rating;
+        return name + " (" + age + ") ," + relevance + ", " + rating;
     }
 
     public int getRelevance() {
@@ -28,7 +28,7 @@ public class Candidate {
         return rating;
     }
 
-    public String getFIO() {
-        return FIO;
+    public String getName() {
+        return name;
     }
 }
