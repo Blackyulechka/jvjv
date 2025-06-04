@@ -1,15 +1,17 @@
 package l3_2;
 
 class Author {
-    public String Name;
-    public String Surname;
-    public int AuthorYear;
-    public Author(String Name, String Surname, int AuthorYear) {
-        this.Name = Name;
-        this.Surname = Surname;
-        this.AuthorYear=AuthorYear;
+    public String name;
+    public String surname;
+    public int authorYear;
+
+    public Author(String name, String surname, int authorYear) {
+        this.name = name;
+        this.surname = surname;
+        this.authorYear = authorYear;
     }
+
     public String toString() {
-        return "Автор: имя " + Name + " фамилия " + Surname +" год рождения " + AuthorYear;
+        return "Автор: имя " + name + " фамилия " + surname + " год рождения " + authorYear;
     }
 }

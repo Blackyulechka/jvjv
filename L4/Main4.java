@@ -2,8 +2,8 @@ package L4;
 
 public class Main4 {
     public static void print_result(Human one, Human two, double Sum) {
-        double Total_Sum = one.GetSum(Sum, two);
-        System.out.println("Сумма которую заплатит " +one + " -> " + two + " : "+ Total_Sum);
+        double totalSum = one.GetSum(Sum, two);
+        System.out.println("Сумма которую заплатит " + one + " -> " + two + " : " + totalSum);
     }
 
     public static void main(String[] args) {
