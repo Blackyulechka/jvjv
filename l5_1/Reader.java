@@ -1,6 +1,7 @@
 package l5_1;
 
-public interface  Reader {
-    public void TakeBook(Administrator admin, String NameBook );
-    public void ReturnBook(Administrator admin, String NameBook );
+public interface Reader extends PersonInterface {
+    void takeBook(Administrator admin, String nameBook);
+
+    void returnBook(Administrator admin, String nameBook);
 }

@@ -1,6 +1,7 @@
 package l5_1;
 
-public interface Administrator {
-    public void FindAndGiveBook(Reader reader,String NameBook);
-    public void ToWarn(Reader reader,String NameBook);
+public interface Administrator extends PersonInterface {
+    void findAndGiveBook(Reader reader, String nameBook);
+
+    void toWarn(Reader reader, String nameBook);
 }

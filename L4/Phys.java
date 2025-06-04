@@ -1,13 +1,15 @@
 package L4;
 
 class Phys extends Human {
-    public Phys(String Name, String Passport) {
-        super(Name, Passport);
+    public Phys(String name, String passport) {
+        super(name, passport);
     }
+
     @Override
-    public double GetSum(double Sum, Human type_Human) {
-        return type_Human.isTaxable() ? Sum * 0.15:0 ;
+    public double GetSum(double Sum, Human typeHuman) {
+        return typeHuman.isTaxable() ? Sum * 0.15 : 0;
     }
+
     @Override
     public boolean isTaxable() {
         return false;

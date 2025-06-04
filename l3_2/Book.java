@@ -1,21 +1,28 @@
 package l3_2;
 
-class Book{
-    public String Name;
+class Book {
+    public String name;
     public Author author;
-    public int Pages;
-    public int Year;
-    public Book(String Name, Author author, int Pages, int Year){
-        this.Name=Name; this.author=author; this.Pages=Pages; this.Year=Year;
+    public int pages;
+    public int year;
+
+    public Book(String name, Author author, int pages, int year) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.year = year;
     }
-    public String toString(){
-        return "Название: "+ Name + ", Автор: "+ author+" Страниц: " + Pages+ " Год выпуска: " + Year;
+
+    public String toString() {
+        return "Название: " + name + ", Автор: " + author + " Страниц: " + pages + " Год выпуска: " + year;
     }
-    public boolean same(Book Mybook){
-        return this.Year == Mybook.Year;
+
+    public boolean isSame(Book Mybook) {
+        return this.year == Mybook.year;
     }
-    public boolean same_year(Author year_a) {
-        return this.Year == year_a.AuthorYear;
+
+    public boolean isSameYear(Author yearAuthor) {
+        return this.year == yearAuthor.authorYear;
     }
 
 }

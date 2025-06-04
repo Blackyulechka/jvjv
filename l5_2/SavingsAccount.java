@@ -1,26 +1,28 @@
 package l5_2;
 
 public class SavingsAccount extends AbstractAccount {
-    public SavingsAccount(int balance){
+    public SavingsAccount(int balance) {
         super(balance);
     }
+
     @Override
-    public void pay(int amount){
+    public void pay(int amount) {
         System.out.println("Нельзя оплатить со сберегательно счета!");
     }
+
     @Override
-    public void addMoney(int amount){
-        Balance+=amount;
-        System.out.println("Баланс после пополнения: " + Balance);
+    public void addMoney(int amount) {
+        balance += amount;
+        System.out.println("Баланс после пополнения: " + balance);
     }
+
     @Override
-    public void transfer(Account account, int amount){
-        if (amount<=Balance) {
+    public void transfer(Account account, int amount) {
+        if (amount <= balance) {
             account.addMoney(amount);
-            Balance -=amount;
-            System.out.println("Баланс после перевода: " + Balance);
-        }
-        else{
+            balance -= amount;
+            System.out.println("Баланс после перевода: " + balance);
+        } else {
             System.out.println("Недостаточно средств!");
         }
     }
