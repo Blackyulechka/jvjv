@@ -11,6 +11,6 @@ public class CandidateComparator implements Comparator<Candidate> {
 
         int lastRating = Integer.compare(can2.getRating(), can1.getRating());
         if (lastRating != 0) return lastRating;
-        return can1.getFIO().compareTo(can2.getFIO());
+        return can1.getName().compareTo(can2.getName());
     }
 }
