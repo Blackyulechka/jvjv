@@ -1,7 +1,8 @@
 package Wildberries;
 
 public class Jeans extends Product {
-    public Jeans(String name, int article, int price, int productSale) {
-        super(name, article, price, productSale);
+    private static int jeansSale = 15;
+    public Jeans(String name, int article, int price) {
+        super(name, article, price, jeansSale);
     }
 }
