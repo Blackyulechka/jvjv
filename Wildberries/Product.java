@@ -31,6 +31,6 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return name + ": " + article + " - " + price + " rub.";
+        return name + ": " + article + " - " + price + " руб.";
     }
 }
